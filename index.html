@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>RUMOAR — Nine pieces. One unbroken thread.</title>
+    <meta name="description" content="RUMOAR builds the pieces Indian menswear skipped. A small, deliberate system of objects for men who are read before they speak." />
+
+    <!-- inline SVG favicon: the card. No file to upload, no 404. -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23FFFFFF'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23D8232F'%3ER%3C/text%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <meta property="og:title" content="RUMOAR — Nine pieces. One unbroken thread." />
+    <meta property="og:description" content="The pieces Indian menswear skipped." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..700;1,400..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet" />
+
+    <style>
+      /* scroll-behavior:smooth must NOT live here — it fights GSAP and makes
+         any scrubbed section stutter. Nav jumps do it in JS instead. */
+      html { background: #FFFFFF; }
+      body { margin: 0; background: #FFFFFF; }
+      /* Held until the intro releases, so the page cannot be scrolled behind
+         the card deck. The class is removed by the app, never by CSS alone —
+         if the app fails to boot, scrolling must still work. */
+      body.intro-lock { overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
